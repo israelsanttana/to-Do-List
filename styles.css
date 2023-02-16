@@ -157,7 +157,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .todo button {
@@ -169,8 +169,14 @@ header {
 
 .todo button:hover {
   background-color: #390ca31f;
-  color: #3a0ca3;
   cursor: pointer;
+}
+
+.done {
+  background: #390ca312;
+  border: none;
+  text-decoration: line-through;
+  font-style: italic;
 }
 
 /* ---- responsive ---- */
