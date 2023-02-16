@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="content">
+          <header><h1>To do List</h1></header>
+          <form id="form-todo">
+            <div class="form-control">
+              <input type="text" id="todo-input" placeholder="adicionar nota" />
+              <button type="submit">salvar</button>
+            </div>
+          </form>
+
+          <form id="edit-form" class="hide">
+            <div class="form-control">
+              <input
+                type="text"
+                id="edit-input"
+                placeholder="edite sua tarefa"
+              />
+              <button type="submit">check</button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+          </form>
+          <div id="toolbar">
+            <div id="search">
+              <form>
+                <input type="text" id="search-input" placeholder="buscar" />
+                <button id="erase-button">
+                  <img src="./assets/clear.png" width="20" height="20" />
+                </button>
+              </form>
+            </div>
+            <div id="filter">
+              <h4>Filter</h4>
+              <select id="filter-select">
+                <option value="all">Todos</option>
+                <option value="done">Feitos</option>
+                <option value="todo">A fazer</option>
+              </select>
+            </div>
+          </div>
+          <div id="todo-list">
+            <div class="todo">
+              <h3>Estou fazendo alguma coisa...</h3>
+              <button class="finish-todo">check</button>
+              <button class="edit-todo">edit</button>
+              <button class="remove-todo">remove</button>
+            </div>
+
+            <div class="todo">
+              <h3>Estou fazendo alguma coisa...</h3>
+              <button class="finish-todo">check</button>
+              <button class="edit-todo">edit</button>
+              <button class="remove-todo">remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
